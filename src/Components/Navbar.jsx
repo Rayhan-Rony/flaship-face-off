@@ -6,7 +6,7 @@ import { MdBookmarkAdd } from "react-icons/md";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar p-0 bg-base-100 shadow-sm">
+      <div className="navbar p-0 bg-base-100 shadow-sm max-w-screen-2xl mx-auto   px-8 md:px-12 lg:px-16 xl:px-24">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -36,7 +36,9 @@ const Navbar = () => {
             >
               <li>
                 <NavLink
-                  className={({ isActive }) => isActive && "text-indigo-600"}
+                  className={({ isActive }) =>
+                    isActive ? "text-indigo-600" : ""
+                  }
                   to="/"
                 >
                   Home
@@ -44,7 +46,9 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) => isActive && "text-indigo-600"}
+                  className={({ isActive }) =>
+                    isActive ? "text-indigo-600" : ""
+                  }
                   to="/about"
                 >
                   about
@@ -52,7 +56,9 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) => isActive && "text-indigo-600"}
+                  className={({ isActive }) =>
+                    isActive ? "text-indigo-600" : ""
+                  }
                   to="/cart"
                 >
                   <MdShoppingCart size={20} />
@@ -60,7 +66,9 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  className={({ isActive }) => isActive && "text-indigo-600"}
+                  className={({ isActive }) =>
+                    isActive ? "text-indigo-600" : ""
+                  }
                   to="/favorites"
                 >
                   <MdBookmarkAdd size={20}></MdBookmarkAdd>
@@ -77,7 +85,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">
             <li>
               <NavLink
-                className={({ isActive }) => isActive && "text-indigo-600"}
+                className={({ isActive }) =>
+                  isActive ? "text-indigo-600" : ""
+                }
                 to="/"
               >
                 Home
@@ -85,7 +95,9 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className={({ isActive }) => isActive && "text-indigo-600"}
+                className={({ isActive }) =>
+                  isActive ? "text-indigo-600" : ""
+                }
                 to="/about"
               >
                 about
@@ -93,7 +105,9 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className={({ isActive }) => isActive && "text-indigo-600"}
+                className={({ isActive }) =>
+                  isActive ? "text-indigo-600" : ""
+                }
                 to="/cart"
               >
                 <MdShoppingCart size={20} />
@@ -101,7 +115,9 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className={({ isActive }) => isActive && "text-indigo-600"}
+                className={({ isActive }) =>
+                  isActive ? "text-indigo-600" : ""
+                }
                 to="/favorites"
               >
                 <MdBookmarkAdd size={20}></MdBookmarkAdd>
