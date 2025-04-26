@@ -51,7 +51,7 @@ const Navbar = () => {
                   }
                   to="/about"
                 >
-                  about
+                  About
                 </NavLink>
               </li>
               <li>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 }
                 to="/about"
               >
-                about
+                About
               </NavLink>
             </li>
             <li>
