@@ -14,7 +14,7 @@ const PhoneCard = ({ phone }) => {
           <p>{description}</p>
           <div className="card-actions justify-end">
             <Link to="/phoneDetails">
-              <a
+              <button
                 href="#_"
                 className="relative inline-block px-4 py-2 font-medium group cursor-pointer"
               >
@@ -23,7 +23,7 @@ const PhoneCard = ({ phone }) => {
                 <span className="relative text-black group-hover:text-white">
                   View More
                 </span>
-              </a>
+              </button>
             </Link>
           </div>
         </div>
