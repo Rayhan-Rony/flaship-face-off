@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import bannerImg from "../assets/banner.png";
+import Button from "./Ui/Button";
 
 const Hero = ({ handleSearch }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -32,7 +33,7 @@ const Hero = ({ handleSearch }) => {
             placeholder="search phone by name"
             className="border border-gray-400 rounded-md shadow-md w-2/3 h-12 px-4 mb-3 focus:outline-none focus:shadow-outline md:mr-2 md:mb-0"
           />
-          <button
+          {/* <button
             type="submit"
             href="#_"
             className="relative inline-block text-lg group"
@@ -46,7 +47,8 @@ const Hero = ({ handleSearch }) => {
               className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
               data-rounded="rounded-lg"
             ></span>
-          </button>
+          </button> */}
+          <Button type="submit" label="Search"></Button>
         </form>
       </div>
     </div>

@@ -76,9 +76,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link to="/" className="font-bold text-xl">
+          <NavLink to="/" className="font-bold text-xl">
             FlagshipFaceOff
-          </Link>
+          </NavLink>
         </div>
 
         <div className="navbar-end hidden lg:flex">
