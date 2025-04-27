@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
+import { MdDeleteForever } from "react-icons/md";
 
-const PhoneCard = ({ phone }) => {
+const PhoneCard = ({ phone, deletable, handleRemove }) => {
   const { image, name, description, id } = phone || {};
   return (
     <div>
@@ -27,6 +28,18 @@ const PhoneCard = ({ phone }) => {
             </Link>
           </div>
         </div>
+        {deletable && (
+          <div
+            onClick={() => handleRemove(id)}
+            className="absolute  group  cursor-pointer hover:scale-105  bg-gray-900 p-3 ml-5 rounded-full hover:bg-gray-300  -top-5 -right-5"
+          >
+            <MdDeleteForever
+              className="text-gray-100 group-hover:text-gray-900"
+              size={20}
+            />
+            {/*  */}
+          </div>
+        )}
       </div>
     </div>
   );

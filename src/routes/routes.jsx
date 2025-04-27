@@ -12,13 +12,14 @@ export const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayouts,
+    hydrateFallbackElement: <p>Loading Please Wait</p>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
         path: "/",
         Component: Home,
-        hydrateFallbackElement: <p>Loading Please Wait</p>,
+
         loader: () => fetch("../phones.json"),
       },
       {
